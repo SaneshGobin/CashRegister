@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cash Register</h1>
+    </header>
+
+    <main>
+        <section id="items-section">
+            <h2>Items</h2>
+            <button type="button" id="breadBtn" class="items">Bread</button>
+            <button type="button" id="milkBtn" class="items">Milk</button>
+            <button type="button" id="cheeseBtn" class="items">Cheese</button>
+            <button type="button" id="butterBtn" class="items">Butter</button>
+        </section>
+
+        <section id="diplay-section">
+            <h2>Transactions</h2>
+            <div id="dislay-box">
+                <label id="displayBoxText">No items</label>
+            </div>
+
+
+            <p id="total">Total: R <span id="totalValueText">0</span></p>
+
+            <label for="customerCash">Customer cash: </label>
+            <input type="text" name="customerCash" id="customerCash" placeholder="Enter cash amount">
+
+            <label for="customerChange">Customer change: R<span id="customerChange">0</span> </label>
+
+
+            <button type="button" id="submitBtn">submit sale</button>
+
+            <button type="button" id="clearBtn">Clear</button>
+
+        </section>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
